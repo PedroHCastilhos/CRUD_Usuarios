@@ -31,4 +31,8 @@ export class UsersService {
     async criptografarPassword(plainText, saltRounds) {
         return await bcrypt.hash(plainText, saltRounds);
     }
+
+    async login(loginDTO: LoginDTO) {
+        
+    }
 }
