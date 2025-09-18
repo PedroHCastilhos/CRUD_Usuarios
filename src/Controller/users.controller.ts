@@ -10,7 +10,6 @@ export class UsersController {
         @Body()
         createUserDTO: CreateUserDTO
     ) {
-        //name, email, password
         return await this.usersService.cadastrar(createUserDTO)
     }
 
